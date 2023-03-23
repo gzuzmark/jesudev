@@ -1,0 +1,36 @@
+name: Update daily dev json from RSS bookmarks
+
+on:
+  #schedule:
+    # Once a day at 8 AM
+    #- cron: 0 8 * * *
+  push:
+    branches:
+      - main
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  update:
+    name: update
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout current branch / repo
+      - uses: actions/checkout@v2
+
+      - name: Group of log lines
+        run: |
+            ls -a
+
+      # Generates the feeds.json
+      - name: Fetch RSS feeds as JSON
+        uses: I-Valchev/rss-to-json@1.0.0        
+        
+
+      # Commit chnages to repo
+      - name: Git Auto Commit
+        uses: stefanzweifel/git-auto-commit-action@v4.8.0
+        with:
+          commit_message: Update feeds.json with RSS data.
+          

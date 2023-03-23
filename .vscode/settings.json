@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.mdoc": "markdown"
+    },
+    "inlineFold.autoFold": false
+}
