@@ -14,7 +14,7 @@ module.exports = {
   safelist: ["dark"],
   theme: {
     fontFamily: {
-      sans: ["Fira Code", ...fontFamily.sans],
+      sans: ["InterVariable", "Inter", ...fontFamily.sans],
     },
     extend: {
       borderWidth: {

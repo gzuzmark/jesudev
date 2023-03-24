@@ -6,8 +6,7 @@ author: Jesus
 tags:
   - trpc
   - nextjs
-date: 2022-09-30T00:00:00.000Z
-pubDate: 2022-09-30T00:00:00.000Z
+date: "3000-09-30T00:00:00.000Z"
 ---
 
 <!-- # title
