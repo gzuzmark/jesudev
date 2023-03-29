@@ -1,5 +1,4 @@
 ---
-layout: $/layouts/post.astro
 title: Introduction to RxJs
 description: 'Through out my career I had the opportunity to work with and awesome tool like rxjs, first introduce to me in the angular ecosystem, and then it was a nice library to help in react projects'
 author: Jesus

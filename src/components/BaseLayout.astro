@@ -1,11 +1,7 @@
-<body
-  class='bg-white dark:bg-slate-800 transition-colors font-sans antialiased min-h-screen'
->
+<body class="bg-white dark:bg-slate-800 transition-colors font-sans antialiased min-h-screen">
   <!-- <div class='flex'> -->
-  <div
-    class='transition-colors border-18 border-theme-primary dark:border-theme-dark-secondary card min-h-screen dark:bg-slate-800'
-  >
-    <main class='grid gap-8 mx-auto max-w-5xl px-4 md:px-0'>
+  <div class="transition-colors border-18 border-theme-primary dark:border-theme-dark-secondary card min-h-screen dark:bg-slate-800">
+    <main class="grid gap-8 mx-auto max-w-5xl px-4 md:px-0">
       <slot />
     </main>
   </div>
@@ -26,13 +22,7 @@
     position: relative;
     background: white;
 
-    border-image: linear-gradient(
-        var(--gradient-angle),
-        #5ddcff,
-        #3c67e3 43%,
-        #4e00c2
-      )
-      1;
+    border-image: linear-gradient(var(--gradient-angle), #5ddcff, #3c67e3 43%, #4e00c2) 1;
     animation: rotation 20s linear infinite;
   }
 

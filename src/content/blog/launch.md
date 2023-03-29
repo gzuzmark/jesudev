@@ -1,5 +1,4 @@
 ---
-layout: $/layouts/post.astro
 title: Suilad ambar - Let's start bloggin
 description: "It's challenging or maybe overwhelming to start a new thing, but I'm tired of thinking of this to much and just launch me to write about the stuff that I do(mostly aboud development)"
 author: Jesus

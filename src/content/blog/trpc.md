@@ -1,5 +1,4 @@
 ---
-layout: $/layouts/post.astro
 title: The new t3 stack
 description: 'Review of the main points of t3 stack, incluiding pros and cons'
 author: Jesus

@@ -4,24 +4,17 @@ import PostDraftPreviewList from "$/components/PostDraftPreviewList.astro";
 import Paginator from "$/components/Paginator.astro";
 import { SITE, PAGE_SIZE } from "$/config";
 
-export const prerender = true;
-
 let title = "Drafts";
-let description =
-  "You're viewing a list of unpublished articles on the site. Accuracy or correctness isn't guranteed...";
+let description = "You're viewing a list of unpublished articles on the site. Accuracy or correctness isn't guranteed...";
 
 export async function getStaticPaths({ paginate, rss }) {
   let allPosts = [];
   try {
     allPosts = await Astro.glob("../../drafts/*.md");
   } catch (error) {
-    console.log(
-      "No draft posts found while generating the index page for the draft pages"
-    );
+    console.log("No draft posts found while generating the index page for the draft pages");
   }
-  const sortedPosts = allPosts.sort(
-    (a, b) => new Date(b.date) - new Date(a.date)
-  );
+  const sortedPosts = allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
 
   return paginate(sortedPosts, {
     pageSize: PAGE_SIZE,
@@ -29,7 +22,6 @@ export async function getStaticPaths({ paginate, rss }) {
 }
 
 const { page } = Astro.props;
-console.log({ page });
 ---
 
 <DefaultPageLayout content={{ title, description }}>
@@ -37,9 +29,8 @@ console.log({ page });
     SITE.listDrafts ? (
       <PostDraftPreviewList posts={page.data} />
     ) : (
-      <p class='text-gray-700 dark:text-gray-100'>
-        Looks like you have landed on a unpublished posts page. Please find all
-        the published posts <a href='/blog'>here</a>!
+      <p class="text-gray-700 dark:text-gray-100">
+        Looks like you have landed on a unpublished posts page. Please find all the published posts <a href="/blog">here</a>!
       </p>
     )
   }
