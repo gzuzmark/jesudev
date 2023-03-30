@@ -53,17 +53,17 @@ pnpm run dev
 Now you can access the site at http://localhost:3000.
 
 Usage 🛠
-Development
+### Development
 Start the development server with the following command:
 ```bash
 pnpm dev
 ```
 The output will be in the dist/ directory.
 
-Deploy
+### Deploy
 You can deploy the site to any static site hosting platform, like Vercel, Netlify, or GitHub Pages. Follow the instructions provided by your hosting provider to deploy the dist/ directory.
 
-Contribution 💡
+## Contribution 💡
 We welcome contributions to the project! If you want to report a bug, suggest a feature or contribute code, please follow these steps:
 
 1. Fork the repository.
@@ -72,5 +72,5 @@ We welcome contributions to the project! If you want to report a bug, suggest a 
 4. Commit and push your changes to your fork.
 5. Open a pull request from your fork to the original repository.
 
-License 📄
+## License 📄
 This project is licensed under the MIT License. See the LICENSE file for more information.
